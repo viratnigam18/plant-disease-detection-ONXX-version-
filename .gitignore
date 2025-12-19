@@ -1,0 +1,20 @@
+# Virtual environment
+onnx_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vs/
+
+# OS files
+.DS_Store
+
+# Optional large files
+leaf_disease_model.h5
+
+# Test files
+OIP.jpeg
+testing data/
+testing video.mp4
