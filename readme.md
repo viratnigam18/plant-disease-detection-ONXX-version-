@@ -1,33 +1,42 @@
+# AGROSCAN – Plant Disease Detection using AI (ONNX)
 
-## Problem Statement
-**Problem Statement 2: AgriFusion-AI – Predictive Farming**
+AGROSCAN is an AI-based system that detects **plant leaf diseases from images**, helping farmers and agricultural practitioners identify crop health issues at an early stage.
 
-This project uses AI to detect plant leaf diseases from images, helping farmers identify crop health issues early.
+This project is built as part of an **AI/ML hackathon**, focusing on **model training, experimentation, and ONNX-based inference**.
 
 ---
 
 ## Dataset
 - **Source:** Kaggle – Plant Disease Dataset  
 - **Link:** https://www.kaggle.com/datasets/emmarex/plantdisease  
-- **Details:** Images of healthy and diseased leaves of Tomato, Potato, and Bell Pepper.
+- **Details:** Images of healthy and diseased leaves of:
+  - Tomato
+  - Potato
+  - Bell Pepper
 
 ---
 
 ## Model & Training
-- **Model:** Convolutional Neural Network (CNN)
-- **Image Size:** 128 × 128
-- **Epochs Used:** **30**
-- **Training Accuracy:** **95.25%**
-- **Best Validation Accuracy:** **88.52%**
-- **Final Validation Loss:** **0.63**
+- **Model Type:** Convolutional Neural Network (CNN)
+- **Input Image Size:** 128 × 128
+- **Epochs:** 30
+- **Training Accuracy:** 95.25%
+- **Best Validation Accuracy:** 88.52%
+- **Final Validation Loss:** 0.63
+
+The CNN learns visual patterns such as leaf spots, discoloration, and texture changes to classify plant diseases.
 
 ---
 
 ## How to Train the Model
-```bash
+
+bash
 python leaf_disease_detection.py
 
+
 This generates:leaf_disease_model.h5
+
+Convert the trained model to ONNX format:
 
 python -m tf2onnx.convert --keras leaf_disease_model.h5 --output leaf_disease_model.onnx --opset 13
 
@@ -86,4 +95,4 @@ we have given some testing data feel free to use your own also
 #cation use only single leaf image with no obstruction like hand etc, for better accuracy .
 
 Thank you
-Skill Issue 
+Virat Nigam 
