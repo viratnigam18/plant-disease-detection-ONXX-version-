@@ -48,7 +48,7 @@ To run the file use
 
 python onnx_run.py
 
-#note- please save image in OIP.jpeg format only 
+### note- please save image in OIP.jpeg format only 
 use image from any source from below class only 
 
 Pepper__bell___Bacterial_spot
@@ -92,7 +92,7 @@ Confidence      : XX.XX%
 we have given some testing data feel free to use your own also 
 
 
-#cation use only single leaf image with no obstruction like hand etc, for better accuracy .
+### cation use only single leaf image with no obstruction like hand etc, for better accuracy .
 
 Thank you
 Virat Nigam 
