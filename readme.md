@@ -48,7 +48,7 @@ To run the file use
 
 python onnx_run.py
 
-note- please save image in OIP.jpeg format only 
+#note- please save image in OIP.jpeg format only 
 use image from any source from below class only 
 
 Pepper__bell___Bacterial_spot
